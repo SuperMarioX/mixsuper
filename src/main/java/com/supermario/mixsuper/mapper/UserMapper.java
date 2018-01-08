@@ -1,14 +1,12 @@
 package com.supermario.mixsuper.mapper;
 
 import com.supermario.mixsuper.entity.UserEntity;
-import com.supermario.mixsuper.enums.UserSexEnum;
-import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
 public interface UserMapper {
 
-    @Select("SELECT * from users")
+    /*@Select("SELECT * from users")
     @Results({
             @Result(property = "userSex", column = "user_sex", javaType = UserSexEnum.class),
             @Result(property = "nickName", column = "nick_name")
@@ -32,7 +30,14 @@ public interface UserMapper {
     void deleteUserById(Long id);
 
     @Delete("delete from users")
-    void deleteAll();
+    void deleteAll();*/
+
+
+    List<UserEntity> getAll();
+    UserEntity getOne(Long id);
+    void insert(UserEntity entity);
+    void update(UserEntity entity);
+    void delete(Long id);
 
 
 }
