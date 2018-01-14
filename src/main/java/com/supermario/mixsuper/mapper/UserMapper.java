@@ -33,8 +33,8 @@ public interface UserMapper {
     void deleteAll();*/
 
 
-    List<UserEntity> getAll();
-    UserEntity getOne(Long id);
+    List<Object> getAll();
+    Object getOne(Long id);
     void insert(UserEntity entity);
     void update(UserEntity entity);
     void delete(Long id);

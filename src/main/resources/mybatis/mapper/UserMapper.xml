@@ -14,7 +14,7 @@
         id, userName, passWord, user_sex, nick_name
     </sql>
 
-    <select id="getAll" resultMap="BaseResultMap"  >
+    <select id="getAll"  resultType="java.lang.String">
         SELECT
         <include refid="Base_Column_List" />
         FROM users
