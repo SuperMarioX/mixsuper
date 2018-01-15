@@ -4,5 +4,13 @@
 - logback
 - GraphQL
 - General exception handler
-- kafka
-- redis
+- kafka:zk
+- redis: lock, jedis
+- aop
+- esb: wso2
+- api gateway: kong
+- Faas
+- servless
+- Hedwig
+- t-io
+- opensource code 2017
