@@ -1,0 +1,21 @@
+18060:X 21 Jan 14:18:48.284 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+18060:X 21 Jan 14:18:48.284 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=18060, just started
+18060:X 21 Jan 14:18:48.284 # Configuration loaded
+18061:X 21 Jan 14:18:48.287 * Increased maximum number of open files to 10032 (it was originally set to 4864).
+18061:X 21 Jan 14:18:48.289 * Running mode=sentinel, port=63792.
+18061:X 21 Jan 14:18:48.290 # Sentinel ID is 426c3878fa1733e1a3ae6a9891c4431d52e254be
+18061:X 21 Jan 14:18:48.290 # +monitor master master-1 ::1 6379 quorum 2
+18061:X 21 Jan 14:18:48.291 * +slave slave [::1]:6380 ::1 6380 @ master-1 ::1 6379
+18061:X 21 Jan 14:18:48.292 * +slave slave [::1]:6381 ::1 6381 @ master-1 ::1 6379
+18061:X 21 Jan 14:18:48.696 * +sentinel sentinel 178810142d67c2211f3c6a1f063a6e52bccb5f98 ::1 63791 @ master-1 ::1 6379
+18061:X 21 Jan 15:00:53.675 # +sdown master master-1 ::1 6379
+18061:X 21 Jan 15:00:53.803 # +new-epoch 1
+18061:X 21 Jan 15:00:53.804 # +vote-for-leader 178810142d67c2211f3c6a1f063a6e52bccb5f98 1
+18061:X 21 Jan 15:00:54.772 # +odown master master-1 ::1 6379 #quorum 2/2
+18061:X 21 Jan 15:00:54.772 # Next failover delay: I will not start a failover before Sun Jan 21 15:01:30 2018
+18061:X 21 Jan 15:00:54.864 # +config-update-from sentinel 178810142d67c2211f3c6a1f063a6e52bccb5f98 ::1 63791 @ master-1 ::1 6379
+18061:X 21 Jan 15:00:54.864 # +switch-master master-1 ::1 6379 ::1 6381
+18061:X 21 Jan 15:00:54.865 * +slave slave [::1]:6380 ::1 6380 @ master-1 ::1 6381
+18061:X 21 Jan 15:00:54.866 * +slave slave [::1]:6379 ::1 6379 @ master-1 ::1 6381
+18061:X 21 Jan 15:00:59.911 # +sdown slave [::1]:6379 ::1 6379 @ master-1 ::1 6381
+18061:X 21 Jan 15:03:15.084 # -sdown slave [::1]:6379 ::1 6379 @ master-1 ::1 6381
